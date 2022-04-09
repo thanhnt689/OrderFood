@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_user"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ntt.orderfood.fragment.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_foodListFragment"
+            app:destination="@id/foodListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodListFragment"
+        android:name="com.ntt.orderfood.fragment.FoodListFragment">
+        <action
+            android:id="@+id/action_foodListFragment_to_detailFoodFragment"
+            app:destination="@id/detailFoodFragment" />
+        <argument
+            android:name="category"
+            app:argType="com.ntt.orderfood.model.Category" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFoodFragment"
+        android:name="com.ntt.orderfood.fragment.DetailFoodFragment">
+        <argument
+            android:name="food"
+            app:argType="com.ntt.orderfood.model.Food" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.ntt.orderfood.fragment.OrdersFragment"
+        android:label="Orders" />
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.ntt.orderfood.fragment.MyCartFragment"
+        android:label="Cart" />
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.ntt.orderfood.fragment.MyProfileFragment"
+        android:label="Profile" />
+</navigation>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "205474353779",
+    "project_id": "order-food-ac4d7",
+    "storage_bucket": "order-food-ac4d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205474353779:android:06dd6ae91b476923599006",
+        "android_client_info": {
+          "package_name": "com.ntt.orderfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205474353779-5r5krrr2eoikngpj8in8p5eeof9clo28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ntt.orderfood",
+            "certificate_hash": "3f66ef8088a89a6a3fa6321585cc3615130d269e"
+          }
+        },
+        {
+          "client_id": "205474353779-ah9l7ggqe4krfcjoaq7sjiugh6a915u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz3HWPpRoWf1UcGm_Fc38KCYyoEIko_sU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205474353779-ah9l7ggqe4krfcjoaq7sjiugh6a915u8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

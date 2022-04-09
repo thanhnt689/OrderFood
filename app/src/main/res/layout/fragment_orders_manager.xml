@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6E7E7">
+
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/top_navigation_constraint_order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_foreground_item_cart"
+        android:elevation="4dp"
+        android:padding="10dp"
+        app:bnc_mode="spread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/btv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#fa4a0c"
+            app:bt_colorInactive="@color/teal_700"
+            app:bt_icon="@drawable/ic_menu"
+            app:bt_padding="10dp"
+            app:bt_shape="@drawable/bg_item_bubble_navigation"
+            app:bt_shapeColor="@color/teal_200"
+            app:bt_title="All" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/btv_placed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#fa4a0c"
+            app:bt_colorInactive="@color/teal_700"
+            app:bt_icon="@drawable/ic_placed"
+            app:bt_padding="10dp"
+            app:bt_shape="@drawable/bg_item_bubble_navigation"
+            app:bt_shapeColor="@color/teal_200"
+            app:bt_title="Placed" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/btv_shipped"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#fa4a0c"
+            app:bt_colorInactive="@color/teal_700"
+            app:bt_icon="@drawable/ic_shipped"
+            app:bt_padding="10dp"
+            app:bt_shape="@drawable/bg_item_bubble_navigation"
+            app:bt_shapeColor="@color/teal_200"
+            app:bt_title="Shipped" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/btv_on_my_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#fa4a0c"
+            app:bt_colorInactive="@color/teal_700"
+            app:bt_icon="@drawable/ic_on_my_way"
+            app:bt_padding="10dp"
+            app:bt_shape="@drawable/bg_item_bubble_navigation"
+            app:bt_shapeColor="@color/teal_200"
+            app:bt_title="On My Way" />
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_orders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_navigation_constraint_order" />
+
+    <LinearLayout
+        android:id="@+id/layout_no_order"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_order" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="No orders yet"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

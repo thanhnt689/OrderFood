@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_manager"
+    app:startDestination="@id/homeManagerFragment">
+    <fragment
+        android:id="@+id/homeManagerFragment"
+        android:name="com.ntt.orderfood.manager.managerFragment.HomeManagerFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeManagerFragment_to_foodListManagerFragment"
+            app:destination="@id/foodListManagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodListManagerFragment"
+        android:name="com.ntt.orderfood.manager.managerFragment.FoodListManagerFragment">
+        <argument
+            android:name="category"
+            app:argType="com.ntt.orderfood.model.Category" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ordersManagerFragment"
+        android:name="com.ntt.orderfood.manager.managerFragment.OrdersManagerFragment"
+        android:label="Orders" />
+
+    <fragment
+        android:id="@+id/myProfileManagerFragment"
+        android:name="com.ntt.orderfood.manager.managerFragment.MyProfileManagerFragment"
+        android:label="Profile" />
+</navigation>
